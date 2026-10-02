@@ -1,0 +1,17 @@
+[package]
+name = "purpleair-epa-correct"
+version = "0.1.0"
+edition = "2024"
+description = "Apply EPA's QC and extended correction to PurpleAir CSV files and report hourly/daily PM2.5 and AQI"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/SignalForHumanity/purpleair-epa-correct"
+readme = "README.md"
+keywords = ["purpleair", "air-quality", "pm25", "aqi", "epa"]
+categories = ["command-line-utilities", "science"]
+
+[dependencies]
+csv = "1"
+
+[profile.release]
+strip = true
+lto = true
